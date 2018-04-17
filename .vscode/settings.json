@@ -1,0 +1,16 @@
+{
+  "workbench.colorCustomizations":
+{
+  "statusBar.background" : "#303030",
+  "statusBar.noFolderBackground" : "#222225",
+  "statusBar.debuggingBackground": "#511f1f"
+},
+"files.watcherExclude": {
+  "**/.git/objects/**": true,
+  "**/.git/subtree-cache/**": true,
+  "**/node_modules/**": true,
+  "**/web/node_modules": true,
+  "**/web/build": true, // will change frequently by build command
+  "**/admin/node_modules": true
+}
+}
