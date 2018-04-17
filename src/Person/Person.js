@@ -2,8 +2,13 @@ import React from 'react';
 import './Person.css';
 
 const person = (props) => {
+  const style = {
+    '@media (min-width: 500px)': {
+      width: '450px',
+    }
+  }
   return (
-    <div className="Person" onClick={props.click}>
+    <div className="Person" style={style} onClick={props.click}>
       <p>
         My name is {props.name}
       </p>

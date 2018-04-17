@@ -50,6 +50,7 @@ class App extends Component {
       font: 'inherit',
       padding: '8px',
       cursor: 'pointer',
+      transition: 'all 0.5s'
     }
 
     let persons = null;
@@ -91,10 +92,10 @@ class App extends Component {
           style={style}
           onClick={this.togglePersonsHandler}>Toggle Data</button>
         {persons}
-      </div>
+        </div>
+
     );
   }
 }
 
 export default App;
-//64
