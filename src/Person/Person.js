@@ -1,11 +1,11 @@
 import React from 'react';
-import './Person.css';
+import classes from './Person.css';
 
 const person = (props) => {
 
 
   return (
-    <div className="Person"  onClick={props.click}>
+    <div className={classes.Person}  onContextMenu={props.click}>
       <p>
         My name is {props.name}
       </p>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import classes from './App.css';
 import Person from './Person/Person';
 
 class App extends Component {
@@ -79,16 +79,17 @@ class App extends Component {
         backgroundColor: 'black'
       }
     }
-    let clases = [];
-    this.state.persons <= 1 ? clases.push('bold'):null;
+    let localClasses = [];
+    this.state.persons.length <= 1 ? localClasses.push(classes.bold):null;
 
     return (
-      <div className="App">
+      <div className={classes.App}>
         <h1 className="hero">React App</h1>
-        <p className={clases}>
+        <p className={localClasses}>
           Test
         </p>
         <button
+          className={classes.boton}
           style={style}
           onClick={this.togglePersonsHandler}>Toggle Data</button>
         {persons}

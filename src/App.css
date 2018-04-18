@@ -4,3 +4,6 @@
 .hero{
   font-size: large;
 }
+.boton:hover{
+  background-color: darkgray;
+}
